@@ -84,7 +84,7 @@ The fastest way to run TrustShield:
 
 ```bash
 # Clone the repository
-git clone https://github.com/EmirrKilinc/trustshield.git
+git clone https://github.com/EmirrKilinc/TrustShield.git
 cd trustshield
 
 # Start all services
