@@ -22,6 +22,12 @@
 
 ---
 
+## 🎯 Project Overview
+
+**TrustShield** is a high-performance security engine designed to detect and prevent fraudulent activities across Turkcell's digital services in real-time. By combining **Rule-Based Risk Assessment** with an intuitive **Case Management System**, it empowers security teams to mitigate risks before they escalate.
+
+---
+
 ## 📸 Screenshots
 
 ### 🖥️ Main Dashboard
@@ -36,12 +42,6 @@
   <img src="docs/screenshots/fraud_cases.png" width="48%" alt="Fraud Cases" />
   <img src="docs/screenshots/decisions.png" width="48%" alt="Decision Logs" />
 </p>
-
----
-
-## 🎯 Project Overview
-
-**TrustShield** is a high-performance security engine designed to detect and prevent fraudulent activities across Turkcell's digital services in real-time. By combining **Rule-Based Risk Assessment** with an intuitive **Case Management System**, it empowers security teams to mitigate risks before they escalate.
 
 ---
 
@@ -84,7 +84,7 @@ The fastest way to run TrustShield:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/trustshield.git
+git clone https://github.com/EmirrKilinc/trustshield.git
 cd trustshield
 
 # Start all services
