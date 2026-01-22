@@ -9,113 +9,124 @@
 <p align="center">
 <strong>Modern Fraud Detection and Risk Management Platform for Turkcell Ecosystem</strong>
 <br />
-<i>Paycell • BiP • Superonline • TV+</i>
+<i>Comprehensive Security for Paycell • BiP • Superonline • TV+</i>
 </p>
 
 📸 Screenshots
 
+🖥️ Main Dashboard
+
 <p align="center">
-<img src="docs/screenshots/dashboard.png" width="45%" alt="Dashboard" />
-<img src="docs/screenshots/fraud_cases.png" width="45%" alt="Fraud Cases" />
+<img src="docs/screenshots/dashboard.png" width="100%" alt="Main Dashboard View" />
 </p>
+
+🔍 Case Management & Audit Logs
+
 <p align="center">
-<img src="docs/screenshots/decisions.png" width="91%" alt="Decision Logs" />
+<img src="docs/screenshots/fraud_cases.png" width="48%" alt="Fraud Cases" />
+<img src="docs/screenshots/decisions.png" width="48%" alt="Decision Logs" />
 </p>
 
 🎯 Project Overview
 
-TrustShield is a robust security layer designed to analyze suspicious activities in digital services in real-time. It provides operators with full control through rule-based risk assessment, advanced vaka management, and transparent decision logs.
+TrustShield is a high-performance security engine designed to detect and prevent fraudulent activities across Turkcell's digital services in real-time. By combining Rule-Based Risk Assessment with an intuitive Case Management System, it empowers security teams to mitigate risks before they escalate.
 
-✨ Core Features
+✨ Key Features
 
-📊 Dashboard & Monitoring
+📊 Advanced Monitoring
 
-Summary Cards: Real-time tracking of total events, open cases, and high-risk users.
+Real-time Analytics: Instant tracking of events, open cases, and high-risk user profiles.
 
-Live Data: Manual refresh capabilities and instant risk scoring.
+Dynamic Risk Scoring: Visual risk indicators (0-100) with color-coded severity levels.
 
-Visualization: Dynamic progress bars and color-coded alerts for intuitive monitoring.
+Live Updates: High-performance data fetching with manual and auto-refresh options.
 
-🛡️ Fraud Case Management
+🛡️ Fraud & Risk Management
 
-Smart Workflow: Seamless status management: OPEN ➡️ IN_PROGRESS ➡️ CLOSED.
+Smart Workflows: Complete lifecycle management from OPEN to CLOSED.
 
-Prioritization: Dynamic sorting from CRITICAL to LOW priority levels.
+Custom Rule Engine: Full CRUD support for creating complex risk rules on the fly.
 
-User Scorecard: Tracking user-based risk signals and historical activity data.
-
-⚙️ Risk Engine & Rule Management
-
-Dynamic Rules: Full CRUD operations to define new security rules on the fly.
-
-Event Filtering: Categorized data streams for PAYMENT, LOGIN, and SUBSCRIPTION.
-
-Automated Actions: Integrated triggers for FORCE_2FA, TEMPORARY_BLOCK, and ANOMALY_ALERT.
+Action Triggers: Automated responses including FORCE_2FA, TEMPORARY_BLOCK, and ANOMALY_ALERT.
 
 🏗️ Tech Stack
 
-Layer
+<table>
+<thead>
+<tr>
+<th width="150">Layer</th>
+<th width="300">Technology</th>
+<th>Key Highlights</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Backend</b></td>
+<td>
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Spring_Boot-3.x-6DB33F%3Fstyle%3Dflat-square%26logo%3Dspring-boot%26logoColor%3Dwhite" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Java-17%2B-ED8B00%3Fstyle%3Dflat-square%26logo%3Dopenjdk%26logoColor%3Dwhite" />
+</td>
+<td>Robust RESTful API with optimized JPA queries.</td>
+</tr>
+<tr>
+<td><b>Frontend</b></td>
+<td>
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/React-18-61DAFB%3Fstyle%3Dflat-square%26logo%3Dreact%26logoColor%3Dblack" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Vite-5.x-646CFF%3Fstyle%3Dflat-square%26logo%3Dvite%26logoColor%3Dwhite" />
+</td>
+<td>Fast, component-based SPA using modern Context API.</td>
+</tr>
+<tr>
+<td><b>Styling</b></td>
+<td>
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC%3Fstyle%3Dflat-square%26logo%3Dtailwind-css%26logoColor%3Dwhite" />
+</td>
+<td>Fully responsive UI with custom Turkcell color palette.</td>
+</tr>
+<tr>
+<td><b>Infrastructure</b></td>
+<td>
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Docker-Enabled-2496ED%3Fstyle%3Dflat-square%26logo%3Ddocker%26logoColor%3Dwhite" />
+</td>
+<td>Containerized environment for seamless deployment.</td>
+</tr>
+<tr>
+<td><b>Management</b></td>
+<td>
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Maven-Project-C71A36%3Fstyle%3Dflat-square%26logo%3Dapache-maven%26logoColor%3Dwhite" />
+</td>
+<td>Automated build and dependency management.</td>
+</tr>
+</tbody>
+</table>
 
-Technology
+🚀 Installation & Deployment
 
-Description
+🐳 Docker (Production Mode)
 
-Backend
-
-
-
-Robust RESTful API architecture
-
-Frontend
-
-
-
-High-performance SPA with Context API
-
-Styling
-
-
-
-Utility-first, responsive design system
-
-DevOps
-
-
-
-Multi-container orchestration (Compose)
-
-Database
-
-
-
-Seamless Data Access Layer
-
-🚀 Quick Start
-
-🐳 Docker (Recommended)
-
-Launch the entire system in seconds with a single command:
+The easiest way to get TrustShield up and running is using Docker Compose:
 
 docker-compose up --build
 
 
-Frontend: http://localhost:5173
+Frontend Access: http://localhost:5173
 
-Backend: http://localhost:8080
+Backend API: http://localhost:8080
 
-🛠️ Manual Installation
+🛠️ Developer Setup
 
 <details>
-<summary><b>Click for Backend Steps</b></summary>
+<summary><b>Backend Setup (Spring Boot)</b></summary>
 
 cd backend
+./mvnw clean install
 ./mvnw spring-boot:run
 
 
 </details>
 
 <details>
-<summary><b>Click for Frontend Steps</b></summary>
+<summary><b>Frontend Setup (React + Vite)</b></summary>
 
 cd frontend
 npm install
@@ -124,35 +135,23 @@ npm run dev
 
 </details>
 
-📂 Project Structure
+📂 Project Directory Structure
 
 .
-├── 🐳 docker-compose.yml  # Docker orchestration file
-├── 📂 backend/            # Spring Boot Project (Java 17+)
-├── 📂 frontend/           # React 18 & Vite Project
-└── 📂 docs/               # Technical documentation
-    └── 🖼️ screenshots/    # Application screenshots
+├── 🐳 docker-compose.yml   # Multi-container orchestration
+├── 📂 backend/             # Spring Boot Service (Java 17+)
+├── 📂 frontend/            # React & Tailwind UI
+└── 📂 docs/                # System Documentation
+    └── 🖼️ screenshots/     # dashboard.png, fraud_cases.png, decisions.png
 
 
-🎨 Design Standards
+👥 Project Details
 
-Color Palette:
+Etkinlik / Event: Turkcell CodeNight 2026 Hackathon
 
-🔵 Primary: #2563EB (Trustworthy Blue)
+Geliştirme Süresi / Duration: ~3 Hours
 
-🔴 High Risk: #EF4444 (Critical Alert)
-
-🟢 Low Risk: #10B981 (Safe Flow)
-
-Compatibility: 100% Responsive design across all device types.
-
-👥 Developer & Event
-
-Hackathon: Turkcell CodeNight 2026
-
-Duration: ~3 Hours
-
-Scope: 2500+ Lines of Code & Fully Dockerized
+Kapsam / Scope: End-to-end Fraud Management Solution
 
 <p align="center">
 <i>Protect your future, not just your data, with TrustShield.</i> 🛡️
